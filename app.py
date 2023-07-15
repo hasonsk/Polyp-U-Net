@@ -1,4 +1,3 @@
-# App.py
 import streamlit as st
 from keras.models import load_model
 from PIL import ImageOps, Image
@@ -17,20 +16,6 @@ file = st.file_uploader('', type=['jpeg', 'jpg', 'png'])
 
 # Load classifier
 model = load_model('/content/drive/MyDrive/Xu_ly_anh/model/model.h5')
-
-
-def read_image(image):
-    # Convert image to numpy array
-    x = np.array(image)
-
-    # Resize image
-    x = cv2.resize(x, (256, 256))
-
-    # Normalize image
-    x = x.astype(np.float32) / 255.0
-
-    return x
-
 
 def mask_parse(mask):
     mask = np.squeeze(mask)
