@@ -2,8 +2,8 @@
 This is a project developing a U-Net model for Polyp detection in medical images. The U-Net model is built based on a large dataset containing labeled medical images with Polyp regions.
 
 
-Input: image containing a polyp.
-Output: Mask indicating the position of the polyp in the image.
+* Input: image containing a polyp.
+* Output: Mask indicating the position of the polyp in the image.
 ## Installation
 #### Clone this repository:
 
